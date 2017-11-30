@@ -1,5 +1,6 @@
 // Jack js
 
+var mapKey = config.MAP_KEY;
 
 function initMap() {
         var uluru = {lat: -25.363, lng: 131.044};
