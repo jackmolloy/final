@@ -1,6 +1,139 @@
 /*Jack Molloy Style*/
 
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: none;
+}
+
 #map {
-        height: 400px;
+        height: 100%;
         width: 100%;
        }
+
+#wrapper { position: relative; }
+#over_map { position: absolute; top: 10px; left: 10px; z-index: 99; }
+
+
+#title {
+  position: absolute;
+  width: auto;
+  top: 70px;
+  left: 25px;
+  z-index: 6;
+  background-color: none;
+  padding: 5px;
+  text-align: left;
+  line-height: 30px;
+  padding-left: 10px;
+  color: white;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 4em;
+}
+
+.sm-title {
+  font-family: 'Lobster', cursive;
+  font-size: .7em;
+}
+
+#floating-panel {
+  position: absolute;
+  width: 340px;
+  top: 200px;
+  left: 25px;
+  z-index: 5;
+  background-color: none;
+  padding: 5px;
+  text-align: left;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+.twitter-feed {
+  /*width: 100%;*/
+  max-width: 468px;
+  height: 650px;
+  background-color: #FFF;
+
+}
+
+.scrollable-content {
+      overflow-x:hidden;
+      overflow-y:scroll;
+    }
+    .scrollable-content::-webkit-scrollbar {
+      width:10px;
+      border-radius: 25px;
+    }
+    .scrollable-content::-webkit-scrollbar * {
+      background:transparent;
+    }
+    .scrollable-content::-webkit-scrollbar-thumb {
+      background:#999 !important;
+    }
+
+
+.twitter-post {
+  display: inline-block;
+  padding: 16px;
+  margin: 0;
+  max-width: 468px;
+  border: #ddd 1px solid;
+  border-top-color: #eee;
+  border-bottom-color: #bbb;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  font: bold 14px/18px Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+.tw-handle {
+  float: left;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 1.4em;
+}
+
+.tw-pic {
+  float: left;
+}
+
+.tweet-text {
+  padding-top: 45px;
+  font: normal 18px/24px Georgia, "Times New Roman", Palatino, serif;
+  margin: 0 5px 10px 0;
+}
+
+
+@media only screen and (max-width : 768px) {
+
+  .twitter-feed {
+    width: 100%;
+    background-color: pink;
+    padding: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+  }
+
+  #floating-panel {
+    position: relative;
+    width: 100%;
+    z-index: 5;
+    background-color: red;
+    padding: 5px;
+    text-align: left;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+  }
+
+
+
+}
